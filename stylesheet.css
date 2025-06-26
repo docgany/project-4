@@ -1,5 +1,5 @@
 .bg-img {
-    background-image: url('landscape.jpg');
+    background-image: url('images/landscape.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,6 +7,13 @@
     height: 600px;
     width: 100%;
     z-index: -1;
+    position: relative;
+}
+
+body {
+    height: 5000px;
+    width: 100%;
+    margin: 0;
     position: relative;
 }
 
@@ -40,6 +47,11 @@ h1 {
     font-size: 18px;
     line-height: 1.33;
     border-color: yellowgreen;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: green;
 }
 
 .btn-light {
@@ -55,7 +67,32 @@ h1 {
 .navbar {
     min-height: 50px;
     margin-bottom: 20px;
-    z-index: 1030;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-scroll {
+    background-color: white;
+    color: #222;
+    border-color: rgba(34,34,34,0.05);
+    transition: all .35s;
+    
+    .bi-fire {
+        color: yellowgreen;
+    }
+    .nav-link {
+        color: black;
+    }
+    .navbar-brand {
+        color: yellowgreen;
+    }
+
+}
+
+.nav-link.active {
+    color: yellowgreen !important;
 }
 
 .apple {
@@ -97,5 +134,28 @@ h2.section-heading {
     line-height: 1.6;
 
 }
+
+.pushpin {
+    color: yellowgreen;
+    font-size: 40px;
+}
+.telephone {
+    color: white;
+    font-size: 40px;
+}
+footer {
+    background-color: yellowgreen;
+}
+
+.bg-image1 {
+    background-image: url('images/writing2.jpg');
+}
+.bg-image2 {
+    background-image: url('images/concert.jpg');
+}
+.bg-images3 {
+    background-image: url('images/pencil-sharpening.jpg');
+}
+
 
 

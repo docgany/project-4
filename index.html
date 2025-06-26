@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        window.addEventListener("scroll",function() {
+            const navbar= document.querySelector(".navbar");
+            if (window.scrollY>110) {
+                navbar.classList.add("navbar-scroll");
+            }
+            else {
+                navbar.classList.remove("navbar-scroll");
+            }
+        })
+
+    </script>
   </head>
-  <body class="bg-white w-100 h-100 m-0">
+  <body class="bg-white">
     <header class="bg-img">
-        <nav class="navbar navbar-expand-lg text-white fixed-top">
-            <div class="container-fluid border-bottom border-light-subtle mx-auto px-5">
-                <a class="navbar-brand text-white ms-5" href="#">
-                    <i class="bi bi-fire text-white fs-lg"></i>   LOGO
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-0">
+            <div class="container-fluid border-bottom border-light border-opacity-25 mx-auto px-5">
+                <a class="navbar-brand ms-5" href="#">
+                    <i class="bi bi-fire fs-lg"></i>  
+                     LOGO
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,13 +34,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active styling" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Products</a>
+                            <a class="nav-link" href="#">Products</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Services
                             </a>
                             <ul class="dropdown-menu">
@@ -37,7 +50,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white">Contact</a>
+                            <a class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +59,7 @@
 
         <div class="header-content">
             <div class="bg-text">
-                <h1 class="display-1 fs-lg">Dramatically Engage</h1>
+                <h1 class="display-1 fs-lg" id="home">Dramatically Engage</h1>
                 <p class="fs-5 fw-light display-5 mb-5">Objectively innovate empowered manufactured products whereas parallel platforms.</p>
                 <a class="btn btn-primary btn-lg text-white" href="#" role="button">ENGAGE NOW</a>
             </div>
@@ -75,7 +88,7 @@
         <div class="container mx-auto mb-4">
             <div class="row">
                 <div class="col-md-6 col-12 my-2">
-                    <img src="microphone.jpg" class="rounded-circle img-fluid" alt="microphone">
+                    <img src="images/microphone.jpg" class="rounded-circle img-fluid" alt="microphone">
                 </div>
 
                 <div class="col-md-6 col-12 my-2">
@@ -85,7 +98,7 @@
                         Dynamically innovate resource-leveling customer service for the state of the art 
                         customer service.
                     </p>
-                    <a class="btn btn-primary btn-lg text-white" href="#" role="button">CLASSIFY IT</a>
+                    <a href="#" class="btn btn-primary btn-lg text-white" role="button">CLASSIFY IT</a>
                 </div>
             </div>
         </div>
@@ -104,19 +117,80 @@
                     <a href="#" class="btn btn-light btn-lg" role="button">TEST IT</a>
                 </div>
                 <div class="col-md-6 col-12 mt-4 mb-2">
-                    <img src="phone.jpg" alt="phone" class="img-fluid rounded-circle">
+                    <img src="images/phone.jpg" alt="phone" class="img-fluid rounded-circle">
                 </div>
             </div>
         </div>
     </section>
-    
 
+    <div class="container-fluid ">
+        <div class="row g-0">
 
+            <div class="col-md-4">
+                <a href="#"><img src="images/writing2.jpg" alt="writing" class="img-fluid object-fit-cover overflow-hidden
+                 img-thumbnail"></a>
 
+            </div>
 
+            <div class="col-md-4">
+                <a href="#"><img src="images/concert.jpg" alt="concert" class="img-fluid object-fit-cover overflow-hidden
+                 img-thumbnail"></a>
 
+            </div>
 
+            <div class="col-md-4">
+                <a href="#"><img src="images/pencil-sharpening.jpg" alt="pencil" class="img-fluid object-fit-cover overflow-hidden
+                 img-thumbnail"></a>
 
+            </div>
+
+        </div>
+    </div>
+
+    <section>
+        <div class="container text-center py-5">
+            <h2 class="text-dark mb-2 fw-medium display-7">
+                <span class="pushpin"><i class="bi bi-pin-angle-fill"></i></span>
+                <br>
+                Sanity Check
+            </h2>
+            <p class="text-muted fs-4 mb-5 fw-light lh-base">
+                Holisticly predominate extensible testing procedures for reliable supply chains. 
+                Dynamically innovate resource-leveling customer service for the state of the art 
+                customer service.
+            </p>
+            <a class="btn btn-primary btn-lg text-white" href="#" role="button">CHECK NOW</a>
+        </div>
+    </section>
+
+    <footer class="text-white">
+        <div class="p-5">
+            <div class="container text-center p-5">
+                <h2 class="display-6 mb-3 fw-medium">Contact Us</h2>
+                <p class="fs-4 fw-light lh-1">
+                    <span class="telephone fw-bold mb-3"><i class="bi bi-telephone-fill"></i></span>
+                    <br><br>
+                   +1(23) 456 7890
+                </p>
+                <p class="fs-4 mb-3 lh-1 fw-light">
+                    <span class="text-white fs-1 fw-bold mb-3"><i class="bi bi-envelope-fill"></i></span>
+                    <br><br>
+                    info@example.com
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-light">
+            <div class="container text-center p-5">
+                <p class="fw-light mb-2 text-black text-muted fs-6">
+                    
+                    Copyright <span class="fs-sm fw-light text-muted"><i class="bi bi-c-circle"></i></span> Example.com 2015   
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
