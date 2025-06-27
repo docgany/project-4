@@ -92,6 +92,10 @@ h1 {
     color: yellowgreen !important;
 }
 
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
 .apple {
     font-size: 60px;
     color: white;
