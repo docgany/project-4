@@ -85,7 +85,6 @@ h1 {
     .navbar-brand {
         color: yellowgreen;
     }
-
 }
 
 .nav-link.active {
@@ -93,6 +92,10 @@ h1 {
 }
 
 .dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown a:hover {
     background-color: #ddd;
 }
 
@@ -133,7 +136,6 @@ h2.section-heading {
     margin: 0px 0px 10px;
     color: #ffffffb3;
     line-height: 1.6;
-
 }
 
 h2 {
